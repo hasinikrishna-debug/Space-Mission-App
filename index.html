@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space Mission Information App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>🚀 Space Mission Explorer</h1>
+
+        <p>
+            Explore famous space missions from around the world
+        </p>
+
+    </header>
+
+
+    <!-- SEARCH -->
+
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search for a mission..."
+        >
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="stats-section">
+
+        <div class="stat-card">
+
+            <h2 id="totalMissions">0</h2>
+
+            <p>Total Missions</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h2 id="nasaMissions">0</h2>
+
+            <p>NASA Missions</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h2 id="isroMissions">0</h2>
+
+            <p>ISRO Missions</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h2 id="activeMissions">0</h2>
+
+            <p>Active Missions</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MISSION CARDS -->
+
+    <main>
+
+        <div
+            id="missionContainer"
+            class="mission-container">
+        </div>
+
+    </main>
+
+
+    <!-- MISSION DETAILS POPUP -->
+
+    <div id="detailsModal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-btn"
+                onclick="closeDetails()">
+                ✕
+            </button>
+
+
+            <h2 id="modalTitle">
+                Mission Details
+            </h2>
+
+
+            <div class="modal-info">
+
+                <p>
+                    <strong>Agency:</strong>
+                    <span id="modalAgency"></span>
+                </p>
+
+
+                <p>
+                    <strong>Launch Year:</strong>
+                    <span id="modalYear"></span>
+                </p>
+
+
+                <p>
+                    <strong>Destination:</strong>
+                    <span id="modalDestination"></span>
+                </p>
+
+
+                <p>
+                    <strong>Status:</strong>
+                    <span id="modalStatus"></span>
+                </p>
+
+            </div>
+
+
+            <h3>About Mission</h3>
+
+
+            <p id="modalDescription"></p>
+
+
+            <button
+                class="modal-close-button"
+                onclick="closeDetails()">
+
+                Close
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            🌌 Space Mission Information App
+        </p>
+
+        <p>
+            Web Technology Zero Gap Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html> 
